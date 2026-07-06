@@ -71,7 +71,7 @@
 
 <body>
   <div class="top-bar">
-    <button class="list-btn" onclick="goList()">목록</button>
+    <button class="list-btn" onclick="closePage()">목록</button>
   </div>
 
   <div class="notice">
@@ -87,10 +87,12 @@
   </div>
 
   <script>
-    function goList() {
-      alert("목록으로 이동합니다.");
-      // 실제 목록 페이지가 있으면 아래처럼 변경
-      // location.href = "list.html";
+    function closePage() {
+      window.close();
+  
+      setTimeout(function () {
+        history.back();
+      }, 100);
     }
   </script>
 </body>
