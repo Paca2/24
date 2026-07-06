@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>미리보기</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffff;
+      padding: 12px 14px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .list-btn {
+      width: 100%;
+      height: 44px;
+      border: 1px solid #bbb;
+      background: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .notice {
+      padding: 12px 16px;
+      color: red;
+      font-size: 14px;
+      line-height: 1.45;
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .image-wrap {
+      width: 100%;
+      overflow: auto;
+      background: #e9e9e9;
+      padding: 10px;
+      touch-action: pinch-zoom;
+    }
+
+    .preview-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <button class="list-btn" onclick="goList()">목록</button>
+  </div>
+
+  <div class="notice">
+    미리보기 서비스 출력물은 법적인 효력이 없으며 최초 미리보기 후 24시간 이내 미리보기 하실 수 있습니다.
+  </div>
+
+  <div class="image-wrap">
+    <img
+      class="preview-img"
+      src="https://postfiles.pstatic.net/MjAyNjA3MDdfMjU1/MDAxNzgzMzc2ODE1ODEz.PuU7dy8MCBL7oqUsjs6s93cWJVoGHveCBi5_j-7mC5Qg.BsSscOFpw2_tj18tHT4fac0-aEOJqZ7oIRQV57bWhZEg.JPEG/%EC%A0%95%EB%B6%8024_-_%EB%B3%91%EC%A0%81%EC%A6%9D%EB%AA%85%EC%84%9C_%EB%B0%9C%EA%B8%89___%EB%AC%B8%EC%84%9C%EC%B6%9C%EB%A0%A5.jpg?type=w773"
+      alt="문서 미리보기 이미지"
+    />
+  </div>
+
+  <script>
+    function goList() {
+      alert("목록으로 이동합니다.");
+      // 실제 목록 페이지가 있으면 아래처럼 변경
+      // location.href = "list.html";
+    }
+  </script>
+</body>
+</html>
